@@ -2,7 +2,7 @@ Assets {
   Id: 10756586291391199740
   Name: "Cms-steampunk_metal_stef"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 5110499210961406805
     ParameterOverrides {

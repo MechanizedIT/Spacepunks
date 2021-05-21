@@ -2,7 +2,7 @@ Assets {
   Id: 7636163701344430338
   Name: "Cms-Custom-rust-material"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 14844354380778219522
     ParameterOverrides {

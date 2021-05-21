@@ -2,7 +2,7 @@ Assets {
   Id: 5870080657517601230
   Name: "Cms-Custom Frosted Glass No Distortion"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 8089139766525578885
     ParameterOverrides {

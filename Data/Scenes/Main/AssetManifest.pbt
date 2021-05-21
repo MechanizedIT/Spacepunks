@@ -98,15 +98,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16910278292812118833
-  Name: "Sun Light"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_SunLight"
-  }
-}
-Assets {
   Id: 16785939387692898375
   Name: "Text 06: I"
   PlatformAssetType: 1
@@ -278,6 +269,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15173989395494415532
+  Name: "Survival Tool Wrench 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Tool_025"
+  }
+}
+Assets {
   Id: 15131137815556487778
   Name: "Text 06: L"
   PlatformAssetType: 1
@@ -320,15 +320,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_mil_tank_hst_gear_001_ref"
-  }
-}
-Assets {
-  Id: 14697405062555329113
-  Name: "Ambient Occlusion Post Process"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_post_process_ao"
   }
 }
 Assets {
@@ -521,15 +512,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12344193518355455075
-  Name: "Star Dome"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_StarDome"
-  }
-}
-Assets {
   Id: 12321687999079612410
   Name: "Cylinder - Bottom-Aligned"
   PlatformAssetType: 1
@@ -575,15 +557,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11669697406240133690
-  Name: "Snow 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_snow_001_uv"
-  }
-}
-Assets {
   Id: 11658837446906205253
   Name: "Sci-fi Airlock Pressure Release Steam 02 SFX"
   PlatformAssetType: 7
@@ -599,15 +572,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F8_Text_010"
-  }
-}
-Assets {
-  Id: 11515840070784317904
-  Name: "Skylight"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_Skylight"
   }
 }
 Assets {
@@ -662,6 +626,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_spiral_001"
+  }
+}
+Assets {
+  Id: 10368861262889596850
+  Name: "Humanoid 2 Wukong"
+  PlatformAssetType: 26
+  PrimaryAsset {
+    AssetType: "SkinnedMeshAssetRef"
+    AssetId: "npc_human_guy_head_fantasy_008_ref"
   }
 }
 Assets {
@@ -791,6 +764,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9075340627918584846
+  Name: "Survival Food Soda 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Food_014"
+  }
+}
+Assets {
   Id: 8863500522913311000
   Name: "Carpet Tile 02"
   PlatformAssetType: 1
@@ -896,6 +878,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F8_Text_020"
+  }
+}
+Assets {
+  Id: 8098651183770632138
+  Name: "Humanoid 2 Rig"
+  PlatformAssetType: 25
+  PrimaryAsset {
+    AssetType: "SkeletonAssetRef"
+    AssetId: "npc_guy_wireframe_001_ref"
   }
 }
 Assets {
@@ -1115,6 +1106,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5309112184451862138
+  Name: "Survival Tool Pickaxe 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Tool_016"
+  }
+}
+Assets {
   Id: 5144490934100011827
   Name: "Cube - Chamfered Small Polished"
   PlatformAssetType: 1
@@ -1229,6 +1229,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_gen_gear_small_001_thin-hole"
+  }
+}
+Assets {
+  Id: 4186978812390061446
+  Name: "Fantasy Crossbow 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Weapon_Crossbow_006"
   }
 }
 Assets {
@@ -1403,15 +1412,6 @@ Assets {
   }
 }
 Assets {
-  Id: 1353607577508895962
-  Name: "Moon"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_Moon"
-  }
-}
-Assets {
   Id: 1348183224460878759
   Name: "Text 06: E"
   PlatformAssetType: 1
@@ -1439,15 +1439,6 @@ Assets {
   }
 }
 Assets {
-  Id: 1160907628910863677
-  Name: "Rock 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_003"
-  }
-}
-Assets {
   Id: 1137112816547272582
   Name: "Cylinder"
   PlatformAssetType: 1
@@ -1472,6 +1463,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_rounded_003"
+  }
+}
+Assets {
+  Id: 918582914012572029
+  Name: "Frame Outline Thin 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameOutline_019"
   }
 }
 Assets {
@@ -1553,15 +1553,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F8_Text_018"
-  }
-}
-Assets {
-  Id: 159368218635911232
-  Name: "Wispy Fog Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_fog_volume_vfx"
   }
 }
 Assets {

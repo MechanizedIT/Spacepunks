@@ -2,7 +2,7 @@ Assets {
   Id: 14530491658613053870
   Name: "TavernWall"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 8329339828071933523
     ParameterOverrides {

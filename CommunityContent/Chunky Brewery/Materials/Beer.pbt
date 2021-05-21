@@ -2,7 +2,7 @@ Assets {
   Id: 3678402895629429693
   Name: "Beer"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 10730624419413819453
     ParameterOverrides {

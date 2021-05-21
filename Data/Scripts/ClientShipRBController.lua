@@ -1,3 +1,4 @@
+Task.Wait(0.02)
 local start = false
 local RBs = {script:GetCustomProperty("Airship_Client_RB_Model1"),
             script:GetCustomProperty("Airship_Client_RB_Model2"),
@@ -10,7 +11,7 @@ local curPos
 local curRot
 
 function OnNetShipSpawned(netShipID, team)
-    Task.Wait(0.05)
+    Task.Wait(1)
     netShip = World.FindObjectById(netShipID):FindChildByName("NetShip")
     local netShipPos = netShip:GetWorldPosition()
     local netShipRot = netShip:GetWorldRotation()
@@ -61,6 +62,8 @@ local broadcastTimer = 0
 local accel = 100
 local hover = Vector3.New(0, 0, 16.3333) * 60
 local brakingYVel = 4
+local oldVel = Vector3.ZERO
+local curAccel = Vector3.ZERO
 
 
 function Tick(dt)
@@ -69,17 +72,14 @@ function Tick(dt)
         local accelPerTick = accel * dt
         local targetVel = netShip:GetCustomProperty("TargetVel")
         targetVel = shipRB:GetWorldRotation() * targetVel
-        print(targetVel)
-        print(shipRB:GetTransform():GetForwardVector())
         local velDelta = targetVel - curVel
         velDelta.x = CoreMath.Clamp(velDelta.x, -accelPerTick, accelPerTick)
         velDelta.y = CoreMath.Clamp(velDelta.y, -accelPerTick, accelPerTick)
         velDelta.z = CoreMath.Clamp(velDelta.z, -accelPerTick, accelPerTick)
-        local sideBrakingVel = -shipRB:GetWorldRotation() * curVel
-        sideBrakingVel = shipRB:GetWorldRotation() * Vector3.New(0, sideBrakingVel.y + sign(-sideBrakingVel.y) * brakingYVel, 0)
-        local newVel = curVel + velDelta + sideBrakingVel
-        newVel = -shipRB:GetWorldRotation() * newVel
-        newVel = shipRB:GetWorldRotation() * Vector3.New(newVel.x, newVel.y + sign(-newVel.y) * brakingYVel, newVel.z)
+        local relativeCurVel = -shipRB:GetWorldRotation() * curVel
+        local sideBrakingVel = shipRB:GetWorldRotation() * Vector3.New(0, -relativeCurVel.y/brakingYVel, -relativeCurVel.z/brakingYVel)
+        
+        local newVel = curVel + velDelta + sideBrakingVel * dt
         newVel = Vector3.New(CoreMath.Clamp(newVel.x, -maxVel, maxVel),
                             CoreMath.Clamp(newVel.y, -maxVel, maxVel),
                             CoreMath.Clamp(newVel.z, -maxVel, maxVel))
@@ -96,7 +96,9 @@ function Tick(dt)
         -- Get angular velocity towards desired rotation
         local clientCubeRotation = shipRB:GetWorldRotation()
         local targetAngVel = netShip:GetCustomProperty("TargetAngVel")
-        local targetRotation = Rotation.New(0, 0, clientCubeRotation.z)
+        local targetRotation = Rotation.New(targetAngVel.x * 1, targetAngVel.y * 1, clientCubeRotation.z + targetAngVel.z * -0.04)
+        targetRotation.y = CoreMath.Clamp(targetRotation.y, -45, 45)
+        targetRotation.x = CoreMath.Clamp(targetRotation.x, -45, 45)
         local deltaQuat = Quaternion.New(targetRotation) * -shipRB:GetWorldTransform():GetQuaternion()
         local angle, x, y, z = GetAngleAxis(deltaQuat)
         local axis = Vector3.New(x, y, z)
@@ -113,18 +115,18 @@ function Tick(dt)
         else
             newAngVel = (0.9 * math.deg(angle) / 1) * axis:GetNormalized();
         end
-        newAngVel.z = targetAngVel.z * -0.01
-        newAngVel.y = targetAngVel.y * -0.1
-        newAngVel.x = targetAngVel.x * -0.1
-        newAngVel = shipRB:GetWorldRotation() * newAngVel
+
         -- Set the ships angular velocity
         shipRB:SetAngularVelocity(newAngVel)
 
+        curAccel = (curVel - oldVel) / dt
+        oldVel = curVel
+        local realVel = shipRB:GetVelocity()
         curPos = shipRB:GetWorldPosition()
         curRot = shipRB:GetWorldRotation()
-        if broadcastTimer > 0.2 then
+        if broadcastTimer > 0.1 then
             broadcastTimer = 0
-            Events.BroadcastToServer("UpdateNetShip", netShip.id, curPos, curRot)
+            Events.BroadcastToServer("UpdateNetShip", netShip.id, curPos, curRot, curVel)
         end
         broadcastTimer = broadcastTimer + dt
     else
@@ -132,4 +134,5 @@ function Tick(dt)
     end
 end
 Events.Connect("NetShipSpawned", OnNetShipSpawned)
+Task.Wait(0.02)
 Events.BroadcastToServer("SpawnNetShip")

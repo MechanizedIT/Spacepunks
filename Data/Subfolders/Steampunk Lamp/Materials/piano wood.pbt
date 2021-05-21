@@ -2,7 +2,7 @@ Assets {
   Id: 8100741969256775248
   Name: "piano wood"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 4050437425243511619
     ParameterOverrides {

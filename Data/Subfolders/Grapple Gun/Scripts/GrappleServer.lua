@@ -36,11 +36,14 @@ local ticksPerSecond = 0
 function OnTargetImpacted(weapon, impactData)
     impactPosition = impactData:GetHitResult():GetImpactPosition()
     player = impactData.weaponOwner
+    print(impactData.targetObject)
     diffVectorStart = impactPosition - player:GetWorldPosition()
     --Start Movement in the Tick Loop
-    doGrappleMovement = true
-    grappleRope = World.SpawnAsset(propGrappleRope, player:GetWorldPosition())
-    UpdateGrappleRope(impactPosition, player)
+    if impactPosition ~= Vector3.ZERO then
+        doGrappleMovement = true
+        grappleRope = World.SpawnAsset(propGrappleRope, player:GetWorldPosition())
+        UpdateGrappleRope(impactPosition, player)
+    end
 end
 
 function OnAbilityReady(ability)

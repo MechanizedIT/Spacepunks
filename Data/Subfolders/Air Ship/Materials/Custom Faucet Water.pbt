@@ -2,7 +2,7 @@ Assets {
   Id: 16357407224430147072
   Name: "Custom Faucet Water"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 4716587028699865732
     ParameterOverrides {

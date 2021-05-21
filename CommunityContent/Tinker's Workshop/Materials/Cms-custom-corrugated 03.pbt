@@ -2,7 +2,7 @@ Assets {
   Id: 4073989313022171836
   Name: "Cms-custom-corrugated 03"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 10613855308372177452
     ParameterOverrides {

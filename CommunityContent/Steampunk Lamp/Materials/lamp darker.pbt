@@ -2,7 +2,7 @@ Assets {
   Id: 1541385300557723748
   Name: "lamp darker"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 5370807011915817041
     ParameterOverrides {

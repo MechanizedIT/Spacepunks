@@ -64,16 +64,16 @@ Assets {
           PlayerMovementSettings {
             WalkSpeed: 640
             MaxAcceleration: 1800
-            WalkableFloorAngle: 44
+            WalkableFloorAngle: 60
             JumpMaxCount: 1
             JumpVelocity: 900
-            GroundFriction: 8
+            GroundFriction: 100
             GravityScale: 1.9
             MaxSwimSpeed: 420
             Buoyancy: 1
             TouchForceFactor: 1
-            BrakingDecelerationFlying: 600
-            MaxFlightSpeed: 600
+            BrakingDecelerationFlying: 300
+            MaxFlightSpeed: 1200
             MovementControlMode {
               Value: "mc:emovementcontrolmode:viewrelative"
             }
@@ -103,7 +103,6 @@ Assets {
               Value: "mc:eabilityaimmode:viewrelative"
             }
             AppearanceChannelingTime: 2
-            MountChannelingTime: 2
             FlipOnMultiJump: true
             CanMoveUp: true
             CanMoveDown: true
@@ -179,7 +178,7 @@ Assets {
           }
           RotationOffset {
           }
-          FieldOfView: 100
+          FieldOfView: 120
           ViewWidth: 1200
           UseCameraSocket: true
           RotationMode {
@@ -195,5 +194,5 @@ Assets {
       AssetId: "First_Person_Camera_Settings"
     }
   }
-  SerializationVersion: 84
+  SerializationVersion: 85
 }

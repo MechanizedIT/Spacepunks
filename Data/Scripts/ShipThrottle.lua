@@ -36,10 +36,10 @@ end
 function Tick(dt)
     if onThrottle then
         if playerOnThrottle:IsBindingPressed("ability_extra_21") then
-            throttleRot = throttleRot + Rotation.New(0, -0.5, 0)
+            throttleRot = throttleRot + Rotation.New(0, -0.5, 0) * 60 * dt
         end
         if playerOnThrottle:IsBindingPressed("ability_extra_31") then
-            throttleRot = throttleRot + Rotation.New(0, 0.5, 0)
+            throttleRot = throttleRot + Rotation.New(0, 0.5, 0) * 60 * dt
         end
         throttleRot.y = CoreMath.Clamp(throttleRot.y, -30, 30)
         local targetVel = Vector3.New((-throttleRot.y + 30) * 2000/60, 0, 0)

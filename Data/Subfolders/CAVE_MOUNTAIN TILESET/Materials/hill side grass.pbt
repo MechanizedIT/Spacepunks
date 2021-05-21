@@ -2,7 +2,7 @@ Assets {
   Id: 3511911983730416820
   Name: "hill side grass"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 16983243226251654418
     ParameterOverrides {

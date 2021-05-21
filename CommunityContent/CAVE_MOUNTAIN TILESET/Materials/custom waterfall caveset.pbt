@@ -2,7 +2,7 @@ Assets {
   Id: 3350163198914226969
   Name: "custom waterfall caveset"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 14590881597893037906
     ParameterOverrides {

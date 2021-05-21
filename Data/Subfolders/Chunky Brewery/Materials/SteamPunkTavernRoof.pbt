@@ -2,7 +2,7 @@ Assets {
   Id: 6623339337661352271
   Name: "SteamPunkTavernRoof"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 9956830976442493159
     ParameterOverrides {

@@ -2,7 +2,7 @@ Assets {
   Id: 740423941215134677
   Name: "couldron_glass"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 8089139766525578885
     ParameterOverrides {

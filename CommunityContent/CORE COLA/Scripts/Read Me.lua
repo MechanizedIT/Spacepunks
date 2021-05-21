@@ -1,0 +1,53 @@
+-- thanks for downloading my content! :D
+-- hope you find it helpful
+--
+--
+-- if you are having trouble using this contact me via discord: HAndLol#6848
+--
+-- feedback is appreciated! (write me a review *wink* *wink*)
+--
+-- you can modify and publish this content as your own, crediting me is really appreciated but not necessary :)
+--
+--
+-------------
+-- changelog:
+--	1.0.0
+--		the release!
+--
+--
+-------------
+-- known issues:
+--	core cola can be dropped in the middle of drinking it
+--
+--
+-------------
+-- credits and ascii art!
+--
+--
+--
+--       .-----------.      side view of  
+--      /_____________\       CORE COLA   
+--     '               '    _____________|
+--     | ~~~: ~~~~~,~  |   / 
+--     |   ~~~~~~~,~~  |  /  here we can see:     
+--     |   ~~~~.       | O   - the nutrition facts
+--     |               |     - who made core cola 
+--     |    =======    |     - the cool design!   
+--     |    made by    |
+--     |    HAndLol    |
+--     |    =======    |
+--     |               |
+--     |  _____        |
+--     | |$3.99|       |
+--     | |_____|5% OOF!|
+--     ,_______________,
+--      \             / 
+--       '-----------'  
+--
+--
+--
+--
+-- thanks to:
+--	Shhteve
+--		helped me out with coding on discord!
+--

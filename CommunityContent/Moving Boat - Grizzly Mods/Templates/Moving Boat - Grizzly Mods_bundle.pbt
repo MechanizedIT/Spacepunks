@@ -40,5 +40,5 @@ Assets {
     Version: "1.1.0"
     Description: "A Boat that moves on \"W\" key press and turns left on \"Q\" and right on \"E\", while sitting. will travel over land and any object so have that in mind lol"
   }
-  SerializationVersion: 84
+  SerializationVersion: 85
 }

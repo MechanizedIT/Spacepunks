@@ -2,7 +2,7 @@ Assets {
   Id: 12163662374278408570
   Name: "Tavern Roof"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 4343960957447186036
     ParameterOverrides {

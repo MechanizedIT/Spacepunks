@@ -756,6 +756,6 @@ Assets {
   Marketplace {
     Description: "Shoots a grapple projectile, which pulls you towards the impact.\r\nWorks best on vertical movement (upwards diagonally)."
   }
-  SerializationVersion: 84
+  SerializationVersion: 85
   DirectlyPublished: true
 }

@@ -2,7 +2,7 @@ Assets {
   Id: 2985179929381574185
   Name: "LAMP"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 5370807011915817041
     ParameterOverrides {

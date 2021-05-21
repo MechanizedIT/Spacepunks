@@ -2,7 +2,7 @@ Assets {
   Id: 4836763818358531048
   Name: "Cms Gear_metalic_blue"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 10659243021206140510
     ParameterOverrides {

@@ -2,7 +2,7 @@ Assets {
   Id: 10807153595473044688
   Name: "Tavern Rock"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 9758176239787604190
     ParameterOverrides {

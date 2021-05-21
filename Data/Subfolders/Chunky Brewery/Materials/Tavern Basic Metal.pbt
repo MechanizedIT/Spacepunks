@@ -2,7 +2,7 @@ Assets {
   Id: 2013212656535526645
   Name: "Tavern Basic Metal"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 18137185533781449557
     ParameterOverrides {

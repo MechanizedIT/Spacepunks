@@ -2,7 +2,7 @@ Assets {
   Id: 2056711429629525372
   Name: "hill snow splotched"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 2447095841911251360
     ParameterOverrides {

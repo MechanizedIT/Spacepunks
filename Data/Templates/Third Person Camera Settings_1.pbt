@@ -1,5 +1,5 @@
 Assets {
-  Id: 5549633822130409941
+  Id: 5167222705794706330
   Name: "Third Person Camera Settings"
   PlatformAssetType: 5
   TemplateAsset {
@@ -64,16 +64,16 @@ Assets {
           PlayerMovementSettings {
             WalkSpeed: 640
             MaxAcceleration: 1800
-            WalkableFloorAngle: 44
+            WalkableFloorAngle: 60
             JumpMaxCount: 1
             JumpVelocity: 900
-            GroundFriction: 8
+            GroundFriction: 4
             GravityScale: 1.9
             MaxSwimSpeed: 420
             Buoyancy: 1
             TouchForceFactor: 1
-            BrakingDecelerationFlying: 600
-            MaxFlightSpeed: 600
+            BrakingDecelerationFlying: 300
+            MaxFlightSpeed: 1200
             MovementControlMode {
               Value: "mc:emovementcontrolmode:lookrelative"
             }
@@ -104,7 +104,6 @@ Assets {
               Value: "mc:eabilityaimmode:viewrelative"
             }
             AppearanceChannelingTime: 2
-            MountChannelingTime: 2
             FlipOnMultiJump: true
             CanMoveUp: true
             CanMoveDown: true
@@ -193,9 +192,9 @@ Assets {
       }
     }
     PrimaryAssetId {
-      AssetType: "TemplateAssetRef"
-      AssetId: "Third_Person_Camera_Settings"
+      AssetType: "None"
+      AssetId: "None"
     }
   }
-  SerializationVersion: 84
+  SerializationVersion: 85
 }

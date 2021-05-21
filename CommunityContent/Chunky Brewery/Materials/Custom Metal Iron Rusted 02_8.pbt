@@ -2,7 +2,7 @@ Assets {
   Id: 9840600697659949065
   Name: "Custom Metal Iron Rusted 02_8"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 16965785657457129039
     ParameterOverrides {

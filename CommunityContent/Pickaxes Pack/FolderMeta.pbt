@@ -1,0 +1,71 @@
+MetaVersion: 1
+MarketplaceDetails {
+  Id: "d1165ff88c73400e85534a0726a9e958"
+  OwnerAccountId: "fe81d37974054e86b9bd91f91a46db89"
+  OwnerName: "gortz"
+  Version: "1.0.0"
+}
+AssetIdsOriginalToNew {
+  key: 1056804399556081278
+  value: 2486918622190219859
+}
+AssetIdsOriginalToNew {
+  key: 1593409591514194813
+  value: 4142479776040370445
+}
+AssetIdsOriginalToNew {
+  key: 2653374591375429575
+  value: 4764511297150034834
+}
+AssetIdsOriginalToNew {
+  key: 2758171574617096724
+  value: 2561435266210091236
+}
+AssetIdsOriginalToNew {
+  key: 3128113581598029785
+  value: 11837499874090555290
+}
+AssetIdsOriginalToNew {
+  key: 3629975423881236918
+  value: 15590588634867405524
+}
+AssetIdsOriginalToNew {
+  key: 6544531766356047012
+  value: 17687595660298223415
+}
+AssetIdsOriginalToNew {
+  key: 7792362325595421885
+  value: 12140158094650098152
+}
+AssetIdsOriginalToNew {
+  key: 7835504499006188931
+  value: 3860209736805459370
+}
+AssetIdsOriginalToNew {
+  key: 11291205501676500061
+  value: 14352473181923465717
+}
+AssetIdsOriginalToNew {
+  key: 12659100350027240463
+  value: 6510444565104906428
+}
+AssetIdsOriginalToNew {
+  key: 13387849510561792059
+  value: 2898945758533880277
+}
+AssetIdsOriginalToNew {
+  key: 13833508531749257376
+  value: 11690203432156326530
+}
+AssetIdsOriginalToNew {
+  key: 14188520033312097834
+  value: 15155685916872407025
+}
+AssetIdsOriginalToNew {
+  key: 16191485184157920517
+  value: 11298123619400675337
+}
+AssetIdsOriginalToNew {
+  key: 17523081126887750759
+  value: 17571988406852312720
+}

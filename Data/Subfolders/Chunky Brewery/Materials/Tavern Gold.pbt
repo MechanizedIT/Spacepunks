@@ -2,7 +2,7 @@ Assets {
   Id: 18296659868926241984
   Name: "Tavern Gold"
   PlatformAssetType: 13
-  SerializationVersion: 84
+  SerializationVersion: 85
   CustomMaterialAsset {
     BaseMaterialId: 4998701643265443986
     ParameterOverrides {
