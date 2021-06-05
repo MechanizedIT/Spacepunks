@@ -10,8 +10,10 @@ function OnBindingPressed(player, binding)
 			end
 		end
 		local spawn = _G.playerTeamSpawn[player]
-		player:SetWorldPosition(spawn:GetWorldPosition() + Vector3.UP * 100)
-		player:ResetVelocity()
+		if (spawn:GetWorldPosition() - player:GetWorldPosition()).size > 5000 then
+			player:SetWorldPosition(spawn:GetWorldPosition() + Vector3.UP * 100)
+			player:ResetVelocity()
+		end
 	end
 end
 

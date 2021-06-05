@@ -1,3 +1,4 @@
+Task.Wait(0.5)
 local carryable = script.parent
 carryable:Detach()
 local held = script:GetCustomProperty("Held")

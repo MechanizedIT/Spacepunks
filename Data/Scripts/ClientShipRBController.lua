@@ -124,11 +124,20 @@ function Tick(dt)
         local realVel = shipRB:GetVelocity()
         curPos = shipRB:GetWorldPosition()
         curRot = shipRB:GetWorldRotation()
-        if broadcastTimer > 0.1 then
+        if broadcastTimer > 0.2 then
             broadcastTimer = 0
             Events.BroadcastToServer("UpdateNetShip", netShip.id, curPos, curRot, curVel)
         end
         broadcastTimer = broadcastTimer + dt
+
+        if  (shipRB:GetWorldPosition() - netShip:GetWorldPosition()).size > 10000 then
+            shipRB:SetWorldPosition(netShip:GetWorldPosition())
+            shipRB:SetWorldRotation(netShip:GetWorldRotation())
+            shipRB:SetVelocity(Vector3.ZERO)
+            curVel = Vector3.ZERO
+            curAngVel = Vector3.ZERO
+            shipRB:SetAngularVelocity(Vector3.ZERO)
+        end
     else
 
     end

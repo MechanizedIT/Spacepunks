@@ -14,6 +14,7 @@ end
 function SpawnNetShip(player)
     print("Spawning Net Ship for " .. player.name)
     local netShip = World.SpawnAsset(propAirship_Net_Model)
+    netShip:SetNetworkedCustomProperty("ShipOwner", player.name)
     local netShipParts = netShip:FindDescendantsByType("StaticMesh")
     local netShipTriggers = netShip:FindDescendantsByType("Trigger")
     local team = 0

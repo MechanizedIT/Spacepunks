@@ -9,8 +9,8 @@ function Tick(dt)
     local speed = oldPos - curPos
     speed = -netShip:GetWorldRotation() * speed
     local shipSpeed = netShip:GetCustomProperty("TargetVel")
-    steamRearRightVFX:SetSmartProperty("Wind Speed", -shipSpeed)
-    steamRearLeftVFX:SetSmartProperty("Wind Speed", -shipSpeed)
+    steamRearRightVFX:SetSmartProperty("Wind Speed", netShip:GetWorldTransform():GetForwardVector() * -shipSpeed.size)
+    steamRearLeftVFX:SetSmartProperty("Wind Speed", netShip:GetWorldTransform():GetForwardVector() * -shipSpeed.size)
     steamFrontRightVFX.isEnabled = false
     steamFrontLeftVFX.isEnabled = false
 

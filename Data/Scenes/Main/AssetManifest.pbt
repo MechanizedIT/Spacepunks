@@ -98,6 +98,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16910278292812118833
+  Name: "Sun Light"
+  PlatformAssetType: 6
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "CORESKY_SunLight"
+  }
+}
+Assets {
   Id: 16785939387692898375
   Name: "Text 06: I"
   PlatformAssetType: 1
@@ -293,6 +302,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F8_Text_005"
+  }
+}
+Assets {
+  Id: 14924133767913092166
+  Name: "Arrow Quiver Load 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_arrow_quiver_load_01_Cue_ref"
   }
 }
 Assets {
@@ -512,6 +530,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12344193518355455075
+  Name: "Star Dome"
+  PlatformAssetType: 6
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "CORESKY_StarDome"
+  }
+}
+Assets {
   Id: 12321687999079612410
   Name: "Cylinder - Bottom-Aligned"
   PlatformAssetType: 1
@@ -572,6 +599,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F8_Text_010"
+  }
+}
+Assets {
+  Id: 11515840070784317904
+  Name: "Skylight"
+  PlatformAssetType: 6
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "CORESKY_Skylight"
   }
 }
 Assets {
@@ -908,6 +944,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7776801869173614492
+  Name: "Chest Normal Opening 03 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_chest_normal_opening_03_Cue_ref"
+  }
+}
+Assets {
   Id: 7582777500836282585
   Name: "Advanced Material"
   PlatformAssetType: 2
@@ -932,6 +977,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_half-pipe_001"
+  }
+}
+Assets {
+  Id: 7469739645032263232
+  Name: "Cash Coin Small Register Collect 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_cash_coin_small_register_collect_01_Cue_ref"
   }
 }
 Assets {
@@ -1115,6 +1169,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5147788496564118667
+  Name: "Small Metal Rattle Container Box Open Close 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_small_metal_rattle_container_box_open_close_sfx_01_Cue_ref"
+  }
+}
+Assets {
   Id: 5144490934100011827
   Name: "Cube - Chamfered Small Polished"
   PlatformAssetType: 1
@@ -1193,6 +1256,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_arched_001"
+  }
+}
+Assets {
+  Id: 4336038412584530943
+  Name: "Roboto Slab Black"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "RobotoSlabBlack_ref"
   }
 }
 Assets {

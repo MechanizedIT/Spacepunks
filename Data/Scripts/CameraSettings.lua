@@ -21,7 +21,7 @@ function Tick(dt)
     if changeMode then
         changeMode = false
         if fpMode then
-            cam:SetPositionOffset(Vector3.New(-100, -20, 0))
+            cam:SetPositionOffset(Vector3.New(-100, 0, 0))
             cam.useCameraSocket = true
             player.isVisibleToSelf = false
         elseif tpMode then

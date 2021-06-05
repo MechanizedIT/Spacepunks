@@ -18,11 +18,9 @@ end
 
 -- functions called when entering each phase. Add your code inside 
 function OnCast_MyAbility(ability)
-	print("OnCast " .. ability.name)
 end
 
 function OnExecute_MyAbility(ability)
-	print("OnExecute " .. ability.name)
 	
 	-- if isTargetDataUpdated is set to true on ability phase, targetData can be used
 	local targetData = ability:GetTargetData()
@@ -38,13 +36,24 @@ function OnCooldown_MyAbility(ability)
 
 	Task.Wait(2)
 	if Object.IsValid(propPickupARock) then
-		local owner = propPickupARock.owner
-		owner.animationStance = "unarmed_stance"
+		local abilityTarget = ability:GetTargetData()
+    	local hitObj = abilityTarget.hitObject
+		local ship = hitObj:FindAncestorByName("Airship_Net_Model")
+    	if hitObj ~= nil then
+			if ship ~= nil then
+				local dmgRate = ship:GetCustomProperty("DmgRate")
+				dmgRate = math.max(dmgRate - 1, 0)
+				ship:SetNetworkedCustomProperty("DmgRate", dmgRate)
+				local owner = propPickupARock.owner
+				owner.animationStance = "unarmed_stance"
+		
+				local ownerPlates = math.max(owner:GetResource("RepairPlates") - 1, 0)
+				owner:SetResource("RepairPlates", ownerPlates)
+				propPickupARock:Unequip()
+				propPickupARock:Destroy()
+			end
+		end
 
-		local ownerPlates = math.max(owner:GetResource("RepairPlates") - 1, 0)
-		owner:SetResource("RepairPlates", ownerPlates)
-		propPickupARock:Unequip()
-		propPickupARock:Destroy()
 	end
 end
 
